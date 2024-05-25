@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+body{
+    background: whitesmoke;
+    color: black;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14%;
+    transition: all .50s ease;
+}
+.logo img{
+    display: flex;
+    align-items: center;
+}
+.navlist{display: flex;}
+.navlist a{
+    color: var(--text-color);
+    font-size: 18px;
+    margin: 0 25px;
+    transition: all .50s ease;
+}
+.navlist a:hover{color: var(--main-green);}
+.navlist a.active{color: var(--main-green);}
+.nav-icons{
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--main-green);
+    border-radius: 3rem;
+    box-shadow: #77b63b 0px 1px 25px;
+}
+.nav-icons i{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--bg-color);
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.50s ease;
+}
+.nav-icons i:hover{
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+#menu-icon{
+    font-size: 27px;
+    color: var(--bg-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/**************************************section-home*********************************************/
+section{
+    padding: 70px 14% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img{
+    width: 110%;
+    height: auto;
+    margin-top: 13%;
+}
+.home-text h1, span{
+    font-size: 2.5rem;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+.home-text p{
+    font-size: 1.2rem;
+    margin-bottom: 1.1rem;
+}
+.btn{
+    display:inline-block;
+    background: rgb(70, 123, 230);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 10px 27px;
+    letter-spacing: 1px;
+    transition: all .50s ease;
+}
+.btn:hover{
+    background: green;
+}
+/*********************************CONTAINER*******************************************/
+header.sticky{
+    padding: 12px 14%;
+    background-color: rgb(70, 123, 230);
+}
+.container{
+    padding: 30px 15% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+.container-box{
+    padding: 43px;
+}
+.container-box img{
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+}
+.container-box h3{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+.container-box a{
+    color:blueviolet;
+    letter-spacing: 1px;
+    transition: all .50s ease;
+}
+.container-box a:hover{
+    color:rgb(70, 123, 230);
+}
+/********************about****************************/
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.about-text p{
+margin-bottom: 19px;
+font-size: 15px;
+line-height: 1.5rem;
+}
+/*************************shop*****************************/
+.middle-text{
+    text-align: center;
+}
+.middle-text h4{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+.middle-text h2{
+    font-size: 25px;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.row{
+    position: relative;
+    padding: 10px 35px 40px;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: transform .50s ease;
+    cursor: pointer;
+}
+.row h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.row p{
+    color:rgb(70, 123, 230);
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1.1rem;
+}
+.in-text .s-btnn a{
+    display: inline-block;
+    padding: 9px 23px;
+    background:rgb(70, 123, 230) ;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all .50s ease;
+}
+.in-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.in-text .price h4{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.in-text .s-btnn a:hover{
+    background:rgb(25, 159, 54);
+    box-shadow: rgb(34, 217, 74) 0px 1px 25px;
+}
+.top-icon{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+}
+.top-icon i{
+    font-size: 30px;
+    color: red;
+    transition: all .50s ease;
+}
+.top-icon i:hover{
+    -o-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+/***************************************contact************************/
+.contact-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contact-img{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.contact-img img{
+    width: 50%;
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+.contact-img img:hover{
+    transform: scale(0.9);
+}
+
+/* ***** media ***** */
+@media(max-width: 1300px){
+    header{
+        padding: 22px 4%;
+        transition: .2s;
+    }
+    header.sticky{ /*плавность при прокрутке*/
+        padding: 14px 4%;
+        transition: .2s; 
+    }
+    section{
+        padding: 50px 4% 40px;
+        transition: .2s;
+    }
+    .container{padding: 30px 4% 50px;}
+}
+@media(max-width: 1180px){
+    .navlist a{font-size: 16px;}
+    .home-text h1, span{
+    font-size: 2.3rem;
+    } 
+    .home-text p{font-size: 1.1rem;}
+    .container-box h3{font-size: 15px;}
+    .container-box a{font-size: 17px;}
+    .home{
+        height: 85vh;
+    }
+}
+@media(max-width: 1060px){
+    #menu-icon{
+        display: initial;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px; /*опустим ниже*/
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--other-color);
+        transition: all .50s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 0.5rem;
+        font-size: 17px;
+        margin: 1rem;
+        border-left: 2px solid var(--main-green);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+@media(max-width: 987px){
+    .navlist a{font-size: 15px;}
+        .home-text h1, span{
+        font-size: 2.1rem;
+    } 
+    .home-text p{font-size: 1rem;}
+    .btn{font-size: 1rem;}
+    .container-box h3{font-size: 19px;}
+    .container-box a{font-size: 20px;}
+    .home{height: 85vh;}
+    .row p{font-size: 15px;}
+    .in-text .s-btnn a{font-size: 15px;}
+    .in-text .price h4{font-size: 20px;}
+    .box p{font-size: 15px;}
+    .bxx-text h4{font-size: 19px;}   
+    .stars i{font-size: 17px;}
+    .home-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    .about-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    .home{height: 70vh;}
+}
+@media(max-width: 860px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    .home-text{
+        padding-top: 100px;
+        text-align: center;
+    }
+    .home-img{text-align: center;}
+    .about{grid-template-columns: 1fr;}
+    .about-img{text-align: center;}
+    .about-text{text-align: center;}
+    .logo img{
+        width: 70px;
+    }
+}
+@media(max-width: 520px){
+    .contact-img{gap: 1.5rem;}
+}
+@media(max-width: 440px){
+    .home{
+        height: 110vh;
+        gap: 0.1rem;
+    }
+}
